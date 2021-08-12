@@ -10,7 +10,7 @@ pipeline {
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
 	        UIPATH_ORCH_LOGICAL_NAME = "elallen"
 	        UIPATH_ORCH_TENANT_NAME = "RPATeamDefault"
-	        UIPATH_ORCH_FOLDER_NAME = "ModernDefault"
+	        UIPATH_ORCH_FOLDER_NAME = "Default"
 	    }
 	
 
