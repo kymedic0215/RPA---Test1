@@ -59,7 +59,7 @@ pipeline {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
 					traceLevel: "Information",
-					entryPointPaths: 'Main.xaml',
+					entryPointPaths: '',
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
