@@ -24,7 +24,7 @@ pipeline {
 	                echo "Jenkins URL ${env.JENKINS_URL}"
 	                echo "Jenkins JOB Number ${env.BUILD_NUMBER}"
 	                echo "Jenkins JOB Name ${env.JOB_NAME}"
-	                echo "GitHub BranhName ${env.BRANCH_NAME}"
+	                echo "GitHub BranchName ${env.BRANCH_NAME}"
 	                checkout scm
 	
 
@@ -59,7 +59,7 @@ pipeline {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
 					traceLevel: "Information",
-					entryPointPaths: '',
+					entryPointPaths: 'Main.xaml',
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
